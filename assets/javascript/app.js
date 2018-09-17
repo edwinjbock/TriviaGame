@@ -1,7 +1,22 @@
-// BEGINNING OF SCRIPT.JS
+// BEGINNING OF APP.JS
 
 // ********** GLOBAL DECLARATIONS **********
 // Variables related to the scripting logic
+var triviaQuestions = [{
+  question: "",
+  answerTrue: "",
+  answersFalse: ["", "", ""]
+}...];
+
+// ********** GLOBAL FUNCTIONS **********
+function randomizeAnswers() {
+// randomize the order of the true and false answers
+}
+
+function gradeAnswers() {
+  // wins, losses, unanswered questions are wrong
+}
+
 
 
 
@@ -10,16 +25,6 @@ var _Text = document.getElementById("html_");
 
 
 
-
-// Global function to test for an alpha event.key
-function isAlpha(str) {
-  for (i = 0; i < computerChoices.length; i++) {
-    if (str === computerChoices[i]) {
-      return true;
-    } else { }
-  }
-  return false;
-}
 
 
 // Global function to test for a duplicate event.key
@@ -33,18 +38,9 @@ function isDuplicate(str) {
 } // end of isDuplicate()
 
 
-console.log(winsText); // ******* TESTING ********
-
-
-// KICK OFF THE SCRIPT WITH A KEYSTROKE
-document.onkeyup = function (event) {
 
 
 
-
-
-  // Port the results back to the DOM
-  _Text.textContent = _;
 
 }; // End of document.onkeyup
 
