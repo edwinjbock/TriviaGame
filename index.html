@@ -13,31 +13,54 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya|PT+Sans+Caption|PT+Serif" rel="stylesheet">
+
   <!-- My Custom CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-  <title>Looney Tunes Trivia</title>
+  <title>Harry Potter Trivia Test</title>
 </head>
 
 <body>
   <!-- ********** BEGIN BODY CODE ********** -->
 
-  <!-- Jumbotron with the game name, etc. -->
+
+
+  <!-- BANNER LOGO -->
   <div class="container">
-    <div class="jumbotron jumbotron-fluid my-jumbotron-top">
-      <div class="row">
-        <div class="col-sm-12">
-          <!-- Sky Blue Image -->
-        </div><!-- End col-sm-12 -->
-      </div> <!-- End row -->
+    <div class="jumbotron my-jumbotron-top">
+        <audio controls autoplay class="audio">
+          <source src="/assets/audio/harry-potter-theme-music.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
     </div><!-- End jumbotron -->
   </div><!-- End Container -->
+
+  <!-- GAME CONTENT -->
   <div class="container">
-    <div class="jumbotron jumbotron-fluid my-jumbotron-bottom">
+    <div class="jumbotron my-jumbotron-bottom">
       <div class="row">
-        <div class="col-sm-12 text-center">
-          <!-- questions, answers, timer -->
-        </div><!-- End col-sm-12 -->
+        <div class="col-sm-6">
+          <!-- Will disappear after a click -->
+          <span id="htmlDirections">
+            <!-- <h1 class="display-4">Greetings</h1> -->
+            <h1>Mischief Managed?</h1>
+
+            <p>Unless you are living under a rock (or you're Ronny Tomosetti) then you're probably very familiar with
+              Harry Potter. How familiar? Well, put your knowledge to the test and find out!</p>
+            <p>You will have a maximum of 20 seconds to answer each of the following questions to test your wizarding
+              knowledge of both the books and the movies.</p>
+
+            <p class="text-center"><strong>* CLICK or TAP anywhere TO BEGIN *</strong></p>
+            <!-- questions, answers, timer -->
+        </div><!-- End col-sm-6 -->
+        <div class="col-sm-6 text-center">
+          <!-- Will disappear after a click -->
+          <span class="my-image-container">
+            <img src="./assets/images/hogwarts.jpg" alt="Hogwarts">
+          </span>
+        </div><!-- End col-sm-6 -->
       </div> <!-- End row -->
     </div><!-- End jumbotron -->
   </div><!-- End Container -->

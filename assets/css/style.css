@@ -1,35 +1,53 @@
 * {
-
+  border-radius: 0 !important; /* Get rid of rounded corners for bootstrap items */
 }
 
 body {
   /* Empty */
 }
 
-.my-jumbotron-container {
-  background-color: #fbe4cf;
+.audio {
+    visibility: hidden;
+}
+
+/* .my-jumbotron-container {
+  background-color: #0e0e0e;
   padding-top: 15px;
   padding-bottom: 5px;
+} */
+
+.container {
+  padding: 0px;
+  margin: 0px auto 0px auto;
+}
+
+.jumbotron {
+  padding: 10px;
+  margin: 0px;
 }
 
 .my-jumbotron-top {
-  background-image: url("../images/looneyBlueBG.jpg");
+  background-image: url("../images/banner.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center;
-  padding-top: 20px 0 20px 10px;
-  height: 300px;
-  background-color: #249BEF;
-  margin-bottom: 0;
+  background-position: center;
+  padding-top: 0px 0 0px 0px;
+  height: 250px;
+  background-color: #0e0e0e;
+  margin: 0px;
+  /* border: solid 2px red; TEMPORARY */
 }
 
 .my-jumbotron-bottom {
-  background-image: url("../assets/images/looneyBlueBG.png");
-  padding-top: 20px 0 20px 10px;
-  margin-top: 0;
-  background-color: #249BEF;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 0px 10px 10px 10px;
+  margin: 0px;
+  background-color: #0e0e0e;
+  /* border: solid 2px red; TEMPORARY */
 }
 
+/* 
 .my-table {
   border: none;
 }
@@ -43,24 +61,52 @@ td {
   text-align: left;
   font-weight: bold;
   padding: 0 0 0 10px;
-}
+} */
 
 #my-result p {
   color: #c3002f;
   font-weight: bold;
-  text-align: cemter;
+  text-align: center;
 }
 
 .my-image-container {
-  background-color: black;
+  background-color: #0e0e0e;
+  background-size: fit;
   max-width: 100%;
-  min-width: 100%;
-  padding: 0;
+  min-width: 10%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#htmlDirections {
+  padding: 0px 10px 0px 10px;
+  color: white;
+  align-content: left;
+  font-family: "LUMOS";
+  line-height: 2em;
 }
 
 
+@font-face {
+  font-family: 'LUMOS';
+  src: URL("../fonts/LUMOS.TTF")
+  format("truetype");
+}
 
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: "LUMOS", serif;
+  padding: 0;
+}
 
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
 
 /* ******** MEDIA QUERIES ******** */
 @media screen and (max-width: 980px) {
@@ -79,18 +125,36 @@ td {
   .container {
     max-width: 640px;
   }
-
-  nav {
-    float: left; 
-  }
 }
 
 @media screen and (max-width: 320px) {
   .container {
     max-width: 320px;
   }
-
-  nav {
-    float: left; 
-  }
 }
+
+/* TESTING BORDERS */
+  div {
+    border: 1px solid green;
+  }
+  .container {
+    border: 1px #c3002f solid;
+  }
+  .row {
+    border: 1px blue solid;
+  }
+  .col-sm-12 {
+    border: 1px blueviolet solid;
+  }
+  .col-med-6 {
+    border: 1px white solid;
+  }
+  .col {
+    border: 1px pink solid;
+  }
+  table {
+    border: 1px yellow solid;
+  } 
+  img {
+    border: 1px yellow solid;
+  } 
