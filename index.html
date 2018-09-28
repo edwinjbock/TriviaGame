@@ -25,43 +25,64 @@
 <body>
   <!-- ********** BEGIN BODY CODE ********** -->
 
-
-
   <!-- BANNER LOGO -->
   <div class="container">
     <div class="jumbotron my-jumbotron-top">
-        <audio controls autoplay class="audio">
-          <source src="/assets/audio/harry-potter-theme-music.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+      <audio controls autoplay class="audio">
+        <source src="/assets/audio/harry-potter-theme-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </div><!-- End jumbotron -->
   </div><!-- End Container -->
 
-  <!-- GAME CONTENT -->
   <div class="container">
     <div class="jumbotron my-jumbotron-bottom">
-      <div class="row">
-        <div class="col-sm-6">
-          <!-- Will disappear after a click -->
-          <span id="htmlDirections">
-            <!-- <h1 class="display-4">Greetings</h1> -->
-            <h1>Mischief Managed?</h1>
 
-            <p>Unless you are living under a rock (or you're Ronny Tomosetti) then you're probably very familiar with
-              Harry Potter. How familiar? Well, put your knowledge to the test and find out!</p>
-            <p>You will have a maximum of 20 seconds to answer each of the following questions to test your wizarding
-              knowledge of both the books and the movies.</p>
+      <!-- ********** BEGINNING of INTRO WINDOW ********** -->
+      <span id="#introWindow">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- Will disappear after a click -->
+            <span id="htmlDirections">
+              <!-- <h1 class="display-4">Greetings</h1> -->
+              <h1>Mischief Managed?</h1>
+              <p>Unless you are living under a rock (or you're Ronny Tomosetti) then you're probably very familiar with
+                Harry Potter. How familiar? Well, put your knowledge to the test and find out!</p>
+              <p>You will have a maximum of 30 seconds to answer each of the following questions to test your wizarding
+                knowledge of both the books and the movies.</p>
+              <p class="text-center"><strong>* CLICK or TAP anywhere TO BEGIN *</strong></p>
+              <!-- questions, answers, timer -->
+          </div><!-- End col-sm-6 -->
+          <div class="col-sm-6 text-center">
+            <!-- Will disappear after a click -->
+            <span class="my-image-container">
+              <img src="./assets/images/hogwarts.jpg" alt="Hogwarts">
+            </span> <!-- End of #introWindow -->
+          </div><!-- End col-sm-6 -->
+        </div> <!-- End row -->
+      </span>
+      <!-- ********** END OF INTRO WINDOW ********** -->
 
-            <p class="text-center"><strong>* CLICK or TAP anywhere TO BEGIN *</strong></p>
-            <!-- questions, answers, timer -->
-        </div><!-- End col-sm-6 -->
-        <div class="col-sm-6 text-center">
-          <!-- Will disappear after a click -->
-          <span class="my-image-container">
-            <img src="./assets/images/hogwarts.jpg" alt="Hogwarts">
-          </span>
-        </div><!-- End col-sm-6 -->
-      </div> <!-- End row -->
+      <!-- ********** BEGINNING of QUIZ WINDOW ********** -->
+      <span id="#quizWindow">
+        <div class="row">
+          <div class="col-sm-12">
+            <span class="quizDump">
+              <!-- Loop for listing questions -->
+              <table>
+                <tr>
+                  <!-- Question # and Question Content from Object -->
+                </tr>
+                <tr>
+                  <!-- LOOP for Radial Buttons -->
+                </tr>
+              </table>
+            </span>
+          </div><!-- End col-sm-12 -->
+        </div> <!-- End row -->
+      </span> <!-- End of #quizWindow -->
+      <!-- ********** END OF QUIZ WINDOW ********** -->
+
     </div><!-- End jumbotron -->
   </div><!-- End Container -->
 

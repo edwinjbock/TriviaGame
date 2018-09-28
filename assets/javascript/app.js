@@ -1,15 +1,18 @@
 // BEGINNING OF APP.JS
+// Wait for the entire file to load before execution
+$(document).ready(function () {
 
-// ********** GLOBAL DECLARATIONS **********
-// Variables related to the scripting logic
-var questions = [{
-  question: "In Harry Potter and the Philosopher's Stone which Gringotts vault was the Philosopher's Stone kept in?",
-  answers: ["703", "514", "713", "217"],
-  answerCorrect: "713"
-},
-  question: "In the epilogue of Harry Potter and the Deathly Hallows, what job does Harry do?",
-  answers: ["Professor at Hogwarts", "Auror", "Minister for Magic", "Reporter for the Daily Prophet"],
-  answerCorrect: "Auror"
+  // ********** GLOBAL DECLARATIONS **********
+  // Variables related to the scripting logic
+  var questionNumber;
+  var questions = [{
+    question: "In Harry Potter and the Philosopher's Stone which Gringotts vault was the Philosopher's Stone kept in?",
+    answers: ["703", "514", "713", "217"],
+    answerCorrect: "713"
+  },
+    question: "In the epilogue of Harry Potter and the Deathly Hallows, what job does Harry do?",
+    answers: ["Professor at Hogwarts", "Auror", "Minister for Magic", "Reporter for the Daily Prophet"],
+    answerCorrect: "Auror"
 },
   question: "Who tells Harry and Ron that people can be a ‘bit stupid' about their pets?",
   answers: ["Hagrid", "Professor Dumbledore", "Hermione", "Professor Lupin"],
@@ -105,39 +108,18 @@ var questions = [{
 }];
 
 // ********** GLOBAL FUNCTIONS **********
-function randomizeAnswers() {
-  // randomize the order of the true and false answers
-}
-
 function gradeAnswers() {
   // wins, losses, unanswered questions are wrong
 }
 
-
-
-
-// Declare Variables that refer to the HTML
-var _Text = document.getElementById("html_");
-
-
-
-
-
-// Global function to test for a duplicate event.key
-function isDuplicate(str) {
-  for (i = 0; i < guessesSoFarArray.length; i++) {
-    if (str === guessesSoFarArray[i]) {
-      return true;
-    } else { }
-  } // end of for loop
-  return false;
-} // end of isDuplicate()
-
-
-
-
+// ************ Initial Click/Touch Event ***************
+$(document).on('touchstart click', document, function () {
+  $("#mainWindow").hide(); // HIDE THE MAIN WINDOW (DIRECTIONS)
+  // SHOW THE QUIZ WINDOW
+});
 
 
 }; // End of document.onkeyup
 
-// END OF FILE
+}); // end of $(document).ready(function()
+// End of file
